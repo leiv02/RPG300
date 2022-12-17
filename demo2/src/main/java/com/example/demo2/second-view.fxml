@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.SecondController">
+   <children>
+      <Button fx:id="startTheBattleButton" layoutX="866.0" layoutY="540.0" mnemonicParsing="false" onAction="#onStartTheBattleButtonClicked" prefHeight="87.0" prefWidth="188.0" text="Start the Battle" />
+      <Pane fx:id="fightPane" layoutX="311.0" layoutY="365.0" visible="false">
+         <children>
+            <Text fx:id="enemy4" layoutY="76.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="enemy4 00HP" wrappingWidth="109.6767578125" />
+            <Text fx:id="enemy2" layoutX="205.0" layoutY="16.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="enemy2 00HP" wrappingWidth="109.6767578125" />
+            <Button fx:id="hunterButton" layoutX="867.0" mnemonicParsing="false" onAction="#onHunterClicked" prefHeight="49.0" prefWidth="160.0" text="Hunter" />
+            <Button fx:id="warriorButton" layoutX="711.0" layoutY="59.0" mnemonicParsing="false" onAction="#onWarriorClicked" prefHeight="51.0" prefWidth="108.0" text="Warrior" />
+            <Text fx:id="enemy1" layoutX="345.0" layoutY="76.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="enemy1 00HP" wrappingWidth="109.6767578125" />
+            <Text fx:id="enemy3" layoutX="202.0" layoutY="131.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="enemy3 00HP" wrappingWidth="109.6767578125" />
+            <Button fx:id="mageButton" layoutX="1079.0" layoutY="62.0" mnemonicParsing="false" onAction="#onMageClicked" prefHeight="47.0" prefWidth="109.0" text="Mage" />
+            <Button fx:id="healerButton" layoutX="881.0" layoutY="120.0" mnemonicParsing="false" onAction="#onHealerClicked" prefHeight="38.0" prefWidth="133.0" text="Healer" />
+         </children>
+      </Pane>
+      <Pane fx:id="menuPane" layoutX="244.0" layoutY="633.0" prefHeight="302.0" prefWidth="1505.0" visible="false">
+         <children>
+            <Text fx:id="attackStatusHunter" layoutX="825.0" layoutY="155.53125" strokeType="OUTSIDE" strokeWidth="0.0" text="Hunter :   Attack = None  Target = None" wrappingWidth="313.50634765625" />
+            <Text fx:id="magicPoint" layoutX="-21.0" layoutY="238.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Max magic point : none selected">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="attackStatusMage" layoutX="825.0" layoutY="225.53125" strokeType="OUTSIDE" strokeWidth="0.0" text="Healer :   Attack = None  Target = None" wrappingWidth="300.3369140625" />
+            <Button fx:id="launchAttack" layoutX="1261.0" layoutY="178.53125" mnemonicParsing="false" onAction="#onLaunchAttackedClicked" prefHeight="51.0" prefWidth="169.0" text="Launch attack" />
+            <Text fx:id="currentHealPoint" layoutX="-21.0" layoutY="163.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Current HP : none selected">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <MenuButton layoutX="1219.0" layoutY="84.53125" mnemonicParsing="false" prefHeight="31.0" prefWidth="116.0" text="attacks">
+              <items>
+                 <MenuItem fx:id="action1" mnemonicParsing="false" onAction="#onAction1Clicked" text="None" />
+                 <MenuItem fx:id="action2" mnemonicParsing="false" onAction="#onAction2Clicked" text="None" />
+                 <MenuItem fx:id="action3" mnemonicParsing="false" onAction="#onAction3Clicked" text="None" />
+                 <MenuItem fx:id="action4" mnemonicParsing="false" onAction="#onAction4Clicked" text="None" />
+              </items>
+            </MenuButton>
+            <Text fx:id="stamina" layoutX="-21.0" layoutY="188.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Max Stamina : none selected">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="classT" layoutX="-15.0" layoutY="115.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Class : None selected" wrappingWidth="237.6708984375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="defense" layoutX="478.0" layoutY="137.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Defense : None Selected" wrappingWidth="279.50634765625">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="attackStatusHealer" layoutX="825.0" layoutY="190.53125" strokeType="OUTSIDE" strokeWidth="0.0" text="Mage  :   Attack = None  Target = None" wrappingWidth="313.50634765625" />
+            <Text fx:id="level" layoutX="476.0" layoutY="211.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Level : None Selected" wrappingWidth="400.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="arrows" layoutX="476.0" layoutY="260.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrows : None Selected" wrappingWidth="400.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <MenuButton layoutX="1111.0" layoutY="188.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="127.0" text="Consomable">
+              <items>
+                <MenuItem fx:id="foodButton" mnemonicParsing="false" onAction="#onFoodButtonClicked" text="Food" />
+                <MenuItem fx:id="potionButton" mnemonicParsing="false" onAction="#onPotionButtonClicked" text="Potion" />
+              </items>
+            </MenuButton>
+            <Text fx:id="currentMagicPoint" layoutX="-22.0" layoutY="261.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Current magic point : none selected">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <MenuButton layoutX="1372.0" layoutY="84.53125" mnemonicParsing="false" prefHeight="31.0" prefWidth="116.0" text="Target">
+              <items>
+                 <MenuItem fx:id="target1" mnemonicParsing="false" onAction="#onTarget1Clicked" text="Target 1" />
+                 <MenuItem fx:id="target2" mnemonicParsing="false" onAction="#onTarget2Clicked" text="Target 2" />
+                 <MenuItem fx:id="target3" mnemonicParsing="false" onAction="#onTarget3Clicked" text="Target 3" />
+                 <MenuItem fx:id="target4" mnemonicParsing="false" onAction="#onTarget4Clicked" text="Target 4" />
+                 <MenuItem fx:id="target5" mnemonicParsing="false" onAction="#onTarget5Clicked" text="Target 5" />
+                 <MenuItem fx:id="target6" mnemonicParsing="false" onAction="#onTarget6Clicked" text="Target 6" />
+                 <MenuItem fx:id="target7" mnemonicParsing="false" onAction="#onTarget7Clicked" text="Target 7" />
+                 <MenuItem fx:id="target8" mnemonicParsing="false" onAction="#onTarget8Clicked" text="Target 8" />
+              </items>
+            </MenuButton>
+            <Text layoutX="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" textAlignment="CENTER" wrappingWidth="194.3541870117188">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="competencePoint" layoutX="477.0" layoutY="235.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Competence Point : None Selected" wrappingWidth="400.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="healPoint" layoutX="-18.0" layoutY="138.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Max HP : None selected" wrappingWidth="237.6708984375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="staminaleft" layoutX="-21.0" layoutY="213.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Stamina left : none selected">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="magicAttack" layoutX="479.0" layoutY="115.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Magic Attack : None selected" wrappingWidth="281.6708984375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="attack" layoutX="481.0" layoutY="81.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack : None selected" wrappingWidth="230.3375244140625">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="magicDefense" layoutX="476.0" layoutY="162.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Magic Defense : None selected" wrappingWidth="387.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="type" layoutX="478.0" layoutY="186.8701171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Type : None Selected" wrappingWidth="400.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="attackStatusWarrior" layoutX="825.0" layoutY="119.53125" strokeType="OUTSIDE" strokeWidth="0.0" text="Warrior :   Attack = None  Target = None" wrappingWidth="313.50634765625" />
+            <Text layoutX="910.0" layoutY="87.0283203125" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack Status">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fx:id="updateLastLap" layoutX="234.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update last lap:" visible="false" wrappingWidth="116.0" />
+      <Text fx:id="update1" layoutX="355.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enemy1 done xx Damage to XXXX" visible="false" wrappingWidth="435.0" />
+      <Text fx:id="update2" layoutX="340.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enemy2 done xx Damage to XXXX" visible="false" wrappingWidth="435.0" />
+      <Text fx:id="update3" layoutX="797.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enemy3 done xx Damage to XXXX" visible="false" wrappingWidth="418.88330078125" />
+      <Text fx:id="update4" layoutX="797.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enemy4 done xx Damage to XXXX" visible="false" wrappingWidth="418.88330078125" />
+
+
+   </children>
+</AnchorPane>

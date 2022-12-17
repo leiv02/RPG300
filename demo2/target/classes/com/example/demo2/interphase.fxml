@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.interphaseController">
+   <children>
+      <AnchorPane fx:id="competencePane" layoutX="237.0" layoutY="223.0" prefHeight="538.0" prefWidth="495.0" visible="false">
+         <children>
+            <Text fx:id="hunterCP" layoutX="9.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competence point : " wrappingWidth="180.23828125" />
+            <Text fx:id="warriorHealth" layoutY="79.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Health" wrappingWidth="150.0" />
+            <Text fx:id="healerMagicAttack" layoutX="275.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Magic Attack" wrappingWidth="150.0" />
+            <Text fx:id="mageHealth" layoutX="273.0" layoutY="388.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Health" wrappingWidth="150.0" />
+            <Text fx:id="hunterMagicDefense" layoutX="9.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Magic defense" wrappingWidth="150.0" />
+            <Button fx:id="healerMagicAttackButton" layoutX="429.0" layoutY="164.0" mnemonicParsing="false" onAction="#onHealerMagicAttackButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text fx:id="warriorCP" layoutX="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competence point : " wrappingWidth="180.23828125" />
+            <Button fx:id="warriorStaminaButton" layoutX="164.0" layoutY="100.0" mnemonicParsing="false" onAction="#onWarriorStaminaButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="hunterDefenseButton" layoutX="164.0" layoutY="484.0" mnemonicParsing="false" onAction="#onHunterDefenseButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="warriorDefenseButton" layoutX="164.0" layoutY="206.0" mnemonicParsing="false" onAction="#onWarriorDefenseButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text fx:id="healerAttack" layoutX="275.0" layoutY="146.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack" wrappingWidth="150.0" />
+            <Text fx:id="hunterMagicAttack" layoutX="10.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Magic Attack" wrappingWidth="150.0" />
+            <Text fx:id="warriorStamina" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="stamina" wrappingWidth="150.0" />
+            <Button fx:id="hunterMagicDefenseButton" layoutX="164.0" layoutY="515.0" mnemonicParsing="false" onAction="#onHunterMagicDefenseButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="warriorHealthButton" layoutX="164.0" layoutY="69.0" mnemonicParsing="false" onAction="#onWarriorHealthButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="mageDefenseButton" layoutX="430.0" layoutY="490.0" mnemonicParsing="false" onAction="#onMageDefenseButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text fx:id="mageClass" layoutX="273.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class" wrappingWidth="150.0" />
+            <Button fx:id="hunterMagicAttackButton" layoutX="163.0" layoutY="457.0" mnemonicParsing="false" onAction="#onHunterMagicAttackButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="healerDefenseButton" layoutX="429.0" layoutY="195.0" mnemonicParsing="false" onAction="#onHealerDefenseButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="healerMagicDefenseButton" layoutX="429.0" layoutY="226.0" mnemonicParsing="false" onAction="#onHealerMagicDefenseButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="hunterAttackButton" layoutX="163.0" layoutY="427.0" mnemonicParsing="false" onAction="#onHunterAttackButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="warriorMagicAttackButton" layoutX="164.0" layoutY="174.0" mnemonicParsing="false" onAction="#onWarriorMagicAttackButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text fx:id="hunterAttack" layoutX="9.0" layoutY="446.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack" wrappingWidth="150.0" />
+            <Text fx:id="hunterDefense" layoutX="9.0" layoutY="504.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Defense" wrappingWidth="150.0" />
+            <Text fx:id="warriorMagicAttack" layoutX="3.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Magic Attack" wrappingWidth="150.0" />
+            <Button fx:id="hunterStaminaButton" layoutX="163.0" layoutY="400.0" mnemonicParsing="false" onAction="#onHunterStaminaButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text fx:id="mageMagicAttack" layoutX="273.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Magic Attack" wrappingWidth="150.0" />
+            <Button fx:id="healerMagicButton" layoutX="429.0" layoutY="97.0" mnemonicParsing="false" onAction="#onHealermagicButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="mageHealthButton" layoutX="429.0" layoutY="376.0" mnemonicParsing="false" onAction="#onMageHealthButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="healerAttackButton" layoutX="429.0" layoutY="132.0" mnemonicParsing="false" onAction="#onHealerAttackButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="mageMagicDefenseButton" layoutX="430.0" layoutY="517.0" mnemonicParsing="false" onAction="#onMageMagicDefenseButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="mageMagicAttackButton" layoutX="430.0" layoutY="464.0" mnemonicParsing="false" onAction="#onMageMagicAttackButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text fx:id="mageMagicDefense" layoutX="273.0" layoutY="529.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="magic defense" wrappingWidth="150.0" />
+            <Text fx:id="healerClass" layoutX="273.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class" wrappingWidth="150.0" />
+            <Text fx:id="warriorClass" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class" wrappingWidth="150.0" />
+            <Button fx:id="mageMagicButton" layoutX="430.0" layoutY="407.0" mnemonicParsing="false" onAction="#onMagemagicButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text fx:id="mageAttack" layoutX="273.0" layoutY="446.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack" wrappingWidth="150.0" />
+            <Text fx:id="warriorMagicDefense" layoutX="3.0" layoutY="249.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="magic defense" wrappingWidth="150.0" />
+            <Text fx:id="healerMagic" layoutX="274.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Magic" wrappingWidth="150.0" />
+            <Text fx:id="healerDefense" layoutX="276.0" layoutY="208.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Defense" wrappingWidth="150.0" />
+            <Button fx:id="mageAttackButton" layoutX="430.0" layoutY="434.0" mnemonicParsing="false" onAction="#onMageAttackButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text fx:id="warriorAttack" layoutX="3.0" layoutY="153.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack" wrappingWidth="150.0" />
+            <Text fx:id="hunterClass" layoutX="9.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class" wrappingWidth="150.0" />
+            <Text fx:id="mageMagic" layoutX="273.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Magic" wrappingWidth="150.0" />
+            <Text fx:id="hunterHealth" layoutX="10.0" layoutY="388.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Health" wrappingWidth="150.0" />
+            <Text fx:id="mageCP" layoutX="259.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competence point : " wrappingWidth="180.23828125" />
+            <Text fx:id="healerHealth" layoutX="273.0" layoutY="76.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Health" wrappingWidth="150.0" />
+            <Text fx:id="warriorDefense" layoutY="216.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Defense" wrappingWidth="150.0" />
+            <Text fx:id="mageDefense" layoutX="273.0" layoutY="502.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Defense" wrappingWidth="150.0" />
+            <Text fx:id="hunterStamina" layoutX="9.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="stamina" wrappingWidth="150.0" />
+            <Button fx:id="warriorMagicDefenseButton" layoutX="164.0" layoutY="239.0" mnemonicParsing="false" onAction="#onWarriorMagicDefenseButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="warriorAttackButton" layoutX="164.0" layoutY="143.0" mnemonicParsing="false" onAction="#onWarriorAttackButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="healerHealthButton" layoutX="429.0" layoutY="62.0" mnemonicParsing="false" onAction="#onHealerHealthButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="hunterHealthButton" layoutX="163.0" layoutY="369.0" mnemonicParsing="false" onAction="#onHunterHealthButtonClicked" prefHeight="21.0" prefWidth="52.0" text="+">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Text fx:id="healerMagicDefense" layoutX="275.0" layoutY="242.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="magic defense" wrappingWidth="150.0" />
+            <Text fx:id="healerCP" layoutX="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competence point : " wrappingWidth="180.23828125" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="inventoryPane" layoutX="1138.0" layoutY="171.0" visible="false">
+         <children>
+            <Text fx:id="armor6" layoutX="85.0" layoutY="694.791015625" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor 6" wrappingWidth="400.0" />
+            <Text fx:id="weapon2" layoutX="83.0" layoutY="266.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon 2" wrappingWidth="400.0" />
+            <Text layoutX="83.0" layoutY="469.5537109375" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor Inventory" wrappingWidth="157.34375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="weapon6" layoutX="83.0" layoutY="389.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon 6" wrappingWidth="400.0" />
+            <Text fx:id="weapon1" layoutX="83.0" layoutY="235.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon 1" wrappingWidth="400.0" />
+            <Text fx:id="weapon5" layoutX="83.0" layoutY="355.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon 5" wrappingWidth="400.0" />
+            <Text fx:id="armor1" layoutX="85.0" layoutY="540.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor 1" wrappingWidth="400.0" />
+            <Button fx:id="mageIndex" layoutX="433.0" layoutY="115.9775390625" mnemonicParsing="false" onAction="#onMageIndexClicked" text="Mage" />
+            <Text fx:id="armor3" layoutX="85.0" layoutY="598.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor 3" wrappingWidth="400.0" />
+            <Button fx:id="equipArmor5Button" layoutY="643.9775390625" mnemonicParsing="false" onAction="#onEquipArmor5ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text layoutX="83.0" layoutY="162.5537109375" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon Inventory" wrappingWidth="157.34375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="armor7" layoutX="85.0" layoutY="732.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor 7" wrappingWidth="400.0" />
+            <Text layoutX="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory" wrappingWidth="117.34375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="weapon3" layoutX="83.0" layoutY="293.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon 3" wrappingWidth="400.0" />
+            <Text fx:id="weapon7" layoutX="83.0" layoutY="427.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon 7" wrappingWidth="400.0" />
+            <Button fx:id="healerIndex" layoutX="318.0" layoutY="115.9775390625" mnemonicParsing="false" onAction="#onHealerIndexClicked" text="Healer" />
+            <Button fx:id="equipWeapon5Button" layoutY="335.9775390625" mnemonicParsing="false" onAction="#onEquipWeapon5ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipArmor4Button" layoutY="610.9775390625" mnemonicParsing="false" onAction="#onEquipArmor4ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipWeapon7Button" layoutY="408.9775390625" mnemonicParsing="false" onAction="#onEquipWeapon7ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="warriorIndex" layoutX="111.0" layoutY="115.9775390625" mnemonicParsing="false" onAction="#onWarriorIndexClicked" text="Warrior" />
+            <Text fx:id="armor4" layoutX="85.0" layoutY="627.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor 4" wrappingWidth="400.0" />
+            <Button fx:id="equipWeapon6Button" layoutY="369.9775390625" mnemonicParsing="false" onAction="#onEquipWeapon6ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipWeapon3Button" layoutY="273.9775390625" mnemonicParsing="false" onAction="#onEquipWeapon3ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="armor2" layoutX="85.0" layoutY="571.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor 2" wrappingWidth="400.0" />
+            <Button fx:id="equipArmor3Button" layoutY="581.9775390625" mnemonicParsing="false" onAction="#onEquipArmor3ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipArmor2Button" layoutY="554.9775390625" mnemonicParsing="false" onAction="#onEquipArmor2ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipWeapon1Button" layoutY="215.9775390625" mnemonicParsing="false" onAction="#onEquipWeapon1ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipWeapon4Button" layoutY="303.9775390625" mnemonicParsing="false" onAction="#onEquipWeapon4ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="weapon4" layoutX="83.0" layoutY="322.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon 4" wrappingWidth="400.0" />
+            <Button fx:id="equipArmor7Button" layoutY="715.9775390625" mnemonicParsing="false" onAction="#onEquipArmor7ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipArmor6Button" layoutY="677.9775390625" mnemonicParsing="false" onAction="#onEquipArmor6ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipArmor1Button" layoutY="523.9775390625" mnemonicParsing="false" onAction="#onEquipArmor1ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="hunterIndex" layoutX="208.0" layoutY="115.9775390625" mnemonicParsing="false" onAction="#onHunterIndexClicked" text="Hunter" />
+            <Text fx:id="armor5" layoutX="85.0" layoutY="660.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor 5" wrappingWidth="400.0" />
+            <Text fx:id="currentArmor" layoutX="74.0" layoutY="499.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="current Armor : " wrappingWidth="348.6708984375" />
+            <Text fx:id="currentWeapon" layoutX="69.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="current Weapon : " wrappingWidth="348.6708984375" />
+            <Button fx:id="equipWeapon2Button" layoutY="246.9775390625" mnemonicParsing="false" onAction="#onEquipWeapon2ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rewardPane" layoutX="732.0" layoutY="212.0" visible="false">
+         <children>
+            <Text fx:id="mageReward" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mage reward : " wrappingWidth="348.6708984375" />
+            <Text fx:id="hunterReward" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hunter reward : " wrappingWidth="348.6708984375" />
+            <Text fx:id="healerReward" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Healer reward : " wrappingWidth="348.6708984375" />
+            <Text fx:id="warriorReward" strokeType="OUTSIDE" strokeWidth="0.0" text="Warrior reward : " wrappingWidth="348.6708984375" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="sortPane" layoutX="761.0" layoutY="382.0" prefHeight="512.0" prefWidth="364.0" visible="false">
+         <children>
+            <Button fx:id="equipSort8Button" layoutX="11.0" layoutY="428.423828125" mnemonicParsing="false" onAction="#onEquipSort8ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="equipedSort4" layoutX="71.0" layoutY="164.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="SortEquiped4 : " wrappingWidth="292.0" />
+            <Button fx:id="equipSort3Button" layoutX="11.0" layoutY="308.423828125" mnemonicParsing="false" onAction="#onEquipSort4ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="unequipSort4Button" layoutY="144.423828125" mnemonicParsing="false" onAction="#onUnequipSort4ButtonClicked" prefHeight="29.0" prefWidth="70.0" text="Unequip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipSort9Button" layoutX="11.0" layoutY="457.423828125" mnemonicParsing="false" onAction="#onEquipSort9ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text layoutX="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort" wrappingWidth="69.70947265625">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="knownSort5" layoutX="70.0" layoutY="361.2373046875" strokeType="OUTSIDE" strokeWidth="0.0" text="KnownSort5" wrappingWidth="292.34375" />
+            <Button fx:id="equipSort3Button" layoutX="11.0" layoutY="279.423828125" mnemonicParsing="false" onAction="#onEquipSort3ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="equipedSort3" layoutX="71.0" layoutY="135.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="SortEquiped3 : " wrappingWidth="292.0" />
+            <Text fx:id="knownSort7" layoutX="70.0" layoutY="419.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="KnownSort7" wrappingWidth="292.34375" />
+            <Button fx:id="equipSort1Button" layoutX="11.0" layoutY="221.423828125" mnemonicParsing="false" onAction="#onEquipSort1ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="equipedSort2" layoutX="71.0" layoutY="108.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="SortEquiped2 : " wrappingWidth="292.0" />
+            <Text fx:id="equipedSort1" layoutX="71.0" layoutY="79.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="SortEquiped1 : " wrappingWidth="292.34375" />
+            <Text fx:id="knownSort9" layoutX="70.0" layoutY="477.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="KnownSort9" wrappingWidth="292.34375" />
+            <Text fx:id="knownSort1" layoutX="70.0" layoutY="241.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="KnownSort1" wrappingWidth="292.34375" />
+            <Text fx:id="knownSort3" layoutX="70.0" layoutY="299.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="KnownSort3" wrappingWidth="292.34375" />
+            <Button fx:id="equipSort2Button" layoutX="11.0" layoutY="252.423828125" mnemonicParsing="false" onAction="#onEquipSort2ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="knownSort4" layoutX="70.0" layoutY="328.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="KnownSort4" wrappingWidth="292.34375" />
+            <Button fx:id="equipSort6Button" layoutX="11.0" layoutY="370.423828125" mnemonicParsing="false" onAction="#onEquipSort6ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipSort7Button" layoutX="11.0" layoutY="399.423828125" mnemonicParsing="false" onAction="#onEquipSort7ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="knownSort6" layoutX="70.0" layoutY="390.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="KnownSort6" wrappingWidth="292.34375" />
+            <Button fx:id="unequipSort2Button" layoutY="88.423828125" mnemonicParsing="false" onAction="#onUnequipSort2ButtonClicked" prefHeight="29.0" prefWidth="70.0" text="unequip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text layoutX="35.0" layoutY="197.84765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Known sorts" wrappingWidth="117.34375" />
+            <Text fx:id="knownSort8" layoutX="70.0" layoutY="448.2373046875" strokeType="OUTSIDE" strokeWidth="0.0" text="KnownSort8" wrappingWidth="292.34375" />
+            <Button fx:id="equipSort5Button" layoutX="11.0" layoutY="341.423828125" mnemonicParsing="false" onAction="#onEquipSort5ButtonClicked" prefHeight="21.0" prefWidth="51.0" text="Equip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="unequipSort1Button" layoutY="59.423828125" mnemonicParsing="false" onAction="#onUnequipSort1ButtonClicked" prefHeight="29.0" prefWidth="70.0" text="Unequip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text layoutX="35.0" layoutY="25.84765625" strokeType="OUTSIDE" strokeWidth="0.0" text="equipped sorts" wrappingWidth="117.34375" />
+            <Button fx:id="unequipSort3Button" layoutY="115.423828125" mnemonicParsing="false" onAction="#onUnequipSort3ButtonClicked" prefHeight="29.0" prefWidth="70.0" text="Unequip">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="knownSort2" layoutX="70.0" layoutY="272.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="KnownSort2" wrappingWidth="292.34375" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="finishPreparationButton" layoutX="876.0" layoutY="879.0" mnemonicParsing="false" onAction="#onFinishPreparationButtonClicked" prefHeight="31.0" prefWidth="170.0" text="Finish Preparation" visible="false" />
+      <Button fx:id="receiveRewardsButton" layoutX="855.0" layoutY="351.0" mnemonicParsing="false" onAction="#onReceiveRewardsClicked" prefHeight="48.0" prefWidth="211.0" text="receive Rewards">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="885.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You lost" textAlignment="CENTER" wrappingWidth="152.07275390625">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="812.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="press alt + F4 to quit" wrappingWidth="307.6708984375">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
